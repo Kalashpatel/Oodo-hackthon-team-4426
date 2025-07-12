@@ -288,7 +288,7 @@ img {
     padding: 2rem;
     background-color: rgba(var(--secondary-color-rgb), 0.5);
     border-radius: var(--border-radius-md);
-    box-shadow: var(--shadow-md);
+    box-shadow: 3px 3px 10px var(--secondary-color);
     transition: var(--transition);
 }
 
@@ -355,6 +355,7 @@ img {
     width: 90%;
     min-height: 400px;
     background-color: rgba(var(--primary-color-rgb), 0.5);
+    box-shadow: 5px 10px 10px var(--primary-color);
 }
 .skill-icon{
     width: 80px;
@@ -805,4 +806,7 @@ img {
 .user-avatar-small{
     width: 200px;
     height: 200px;
+}
+.b-skills{
+    background-color: var(--primary-color);
 }
