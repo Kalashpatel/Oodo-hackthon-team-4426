@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Skill Swap Platform</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/animations.css">
+    <link rel="stylesheet" href="assests/css/responsive.css">
+    <!-- bootstrap css -->
+     <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="assests/images/favicon.png" type="image/x-icon">
+</head>
+<body data-bs-theme="dark">
+    <header class="header bg-secondary text-white">
+        <div class="container p-120">
+            <div class="logo">
+                <h1><span>Skill</span>Swap</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="text-white">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Browse Skills</a></li>
+                    <li><a href="profile.html" class="active text-white">My Profile</a></li>
+                    <li><a href="#" class="text-white">Swap Requests</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="profile-section p-120">
+        <div class="container">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-actions mb-3">
+                        <button id="save-profile" class="btn btn-save p-btn text-black">Save</button>
+                        <button id="discard-changes" class="btn btn-discard p-btn text-black">Discard</button>
+                    </div>
+                    <div class="profile-navigation mb-3">
+                        <a href="#" class="nav-link active mb-2">Swap requests</a>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </div>
+                    <div class="user-avatar-small">
+                        <img src="assests/images/faces/Figure → team-image3.jpg.png" alt="Profile Photo">
+                    </div>
+                </div>
+                
+                <div class="profile-content p-120">
+                    <div class="profile-info-container">
+                        <div class="profile-details">
+                            <div class="form-group">
+                                <label for="profile-name">Name</label>
+                                <input type="text" id="profile-name" value="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profile-location">Location</label>
+                                <input type="text" id="profile-location" value="">
+                            </div>
+                            
+                            <div class="skills-section mt-3">
+                                <h3 class="mb-3">Skills Offered</h3>
+                                <div class="skills-container d-flex gap-3 mb-4" id="skills-offered">
+                                    <span class="skill-tag">Graphic Design <i class="fas fa-times"></i></span>
+                                    <span class="skill-tag">Video Editing <i class="fas fa-times"></i></span>
+                                    <span class="skill-tag">Photoshop <i class="fas fa-times"></i></span>
+                                    <button id="add-offered-skill" class="btn btn-small">+ Add</button>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-section">
+                                <h3 class="mb-3">Skills Wanted</h3>
+                                <div class="skills-container d-flex gap-3 mb-4" id="skills-wanted">
+                                    <span class="skill-tag">Python <i class="fas fa-times"></i></span>
+                                    <span class="skill-tag">JavaScript <i class="fas fa-times"></i></span>
+                                    <span class="skill-tag">Manager <i class="fas fa-times"></i></span>
+                                    <button id="add-wanted-skill" class="btn btn-small">+ Add</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profile-availability">Availability</label>
+                                <select id="profile-availability">
+                                    <option value="weekdays">Weekdays</option>
+                                    <option value="weekends" selected>Weekends</option>
+                                    <option value="evenings">Evenings</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profile-visibility">Profile</label>
+                                <select id="profile-visibility">
+                                    <option value="public" selected>Public</option>
+                                    <option value="private">Private</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-photo-container mt-5">
+                            <div class="profile-photo-large">
+                                <img src="assests/images/faces/Figure → team-image3.jpg.png" alt="face1">
+                            </div>
+                            <div class="photo-actions mt-5 ms-5">
+                                <button id="add-edit-photo" class="btn btn-small">Add/Edit</button>
+                                <button id="remove-photo" class="btn btn-small btn-danger">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span>Skill</span>Swap</h2>
+                    <p>Connect. Learn. Grow.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Platform</h3>
+                        <ul>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Browse Skills</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkillSwap. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for adding skills -->
+    <div class="modal" id="add-skill-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Add Skill</h2>
+            <div class="form-group">
+                <label for="skill-name">Skill Name</label>
+                <input type="text" id="skill-name" placeholder="Enter skill name">
+            </div>
+            <div class="form-group">
+                <label for="skill-category">Category</label>
+                <select id="skill-category">
+                    <option value="">Select a category</option>
+                    <option value="technology">Technology</option>
+                    <option value="arts">Arts & Crafts</option>
+                    <option value="music">Music</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="languages">Languages</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="business">Business</option>
+                    <option value="academic">Academic</option>
+                </select>
+            </div>
+            <button id="confirm-add-skill" class="btn btn-primary">Add Skill</button>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

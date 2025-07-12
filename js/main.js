@@ -138,13 +138,13 @@ function populateTestimonials() {
             content: "SkillSwap helped me learn guitar while teaching someone Spanish. The platform made it easy to find the perfect match!",
             name: "Michael Chen",
             title: "Language Enthusiast",
-            image: "https://placehold.co/100x100"
+            image: "../assests/images/faces/Figure.png"
         },
         {
             content: "I've been able to expand my cooking skills by exchanging lessons with a professional chef. This platform is revolutionary!",
             name: "Emily Rodriguez",
             title: "Home Cook",
-            image: "https://placehold.co/100x100"
+            image: "../assests/images/faces/team-image6.jpg.png"
         }
     ];
     
