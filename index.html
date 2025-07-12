@@ -131,23 +131,94 @@
 
     <section class="featured-skills p-120">
         <div class="container">
-            <h2 class="section-title text-white">Popular Skills</h2>
-            <div class="skills-grid">
-                
+            <h2 class="section-title text-white mb-5">Hot Skills of the Moment</h2>
+            <div class="skill-grid mt-5">
+                <div class="row">
+                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+				        <div class="carousel-inner" role="listbox">
+				        	<div class="carousel-item active">
+				        		<div class="col-md-3">
+				        			<div class="card skill-card mx-auto p-3">
+				        				<div class="skill-icon mx-auto mt-3">
+                                            <img src="assests/images/skills/animation.png" alt="animation">
+                                        </div>
+                                        <h2 class="text-white mt-3 mx-auto">Animation</h2>
+                                        <p class="text-white text-center mt-3">Bring stories to life with motion, color, and imagination—animation makes ideas visually unforgettable.</p>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="carousel-item">
+				        		<div class="col-md-3">
+				        			<div class="card skill-card mx-auto p-3">
+				        				<div class="skill-icon mx-auto mt-3">
+                                            <img src="assests/images/skills/coding.png" alt="animation">
+                                        </div>
+                                        <h3 class="text-white mt-3 mx-auto">Web Devlopment</h3>
+                                        <p class="text-white text-center mt-3">Build dynamic, responsive websites that connect users, drive engagement, and elevate your brand online effortlessly.</p>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="carousel-item">
+				        		<div class="col-md-3">
+				        			<div class="card skill-card mx-auto p-3">
+				        				<div class="skill-icon mx-auto mt-3">
+                                            <img src="assests/images/skills/it-security.png" alt="animation">
+                                        </div>
+                                        <h2 class="text-white mt-3 mx-auto">Cyber security</h2>
+                                        <p class="text-white text-center mt-3">Protect your data, prevent threats, and ensure digital safety with robust, reliable cyber security solution.</p>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="carousel-item">
+				        		<div class="col-md-3">
+				        			<div class="card skill-card mx-auto p-3">
+				        				<div class="skill-icon mx-auto mt-3">
+                                            <img src="assests/images/skills/monitor.png" alt="animation">
+                                        </div>
+                                        <h2 class="text-white mt-3 mx-auto">Data Analysis</h2>
+                                        <p class="text-white text-center mt-3">Transform raw data into actionable insights to drive smarter decisions and boost business performance.</p>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="carousel-item">
+				        		<div class="col-md-3">
+				        			<div class="card skill-card mx-auto p-3">
+				        				<div class="skill-icon mx-auto mt-3">
+                                            <img src="assests/images/skills/video-game.png" alt="animation">
+                                        </div>
+                                        <h3 class="text-white text-center mt-3 mx-auto">Game Development</h3>
+                                        <p class="text-white text-center mt-3">Design immersive worlds, code thrilling gameplay, and create unforgettable experiences through game development mastery.</p>
+				        			</div>
+				        		</div>
+				        	</div>
+				        	<div class="carousel-item">
+				        		<div class="col-md-3">
+				        			<div class="card skill-card mx-auto p-3">
+				        				<div class="skill-icon mx-auto mt-3">
+                                            <img src="assests/images/skills/web-design.png" alt="animation">
+                                        </div>
+                                        <h2 class="text-white mt-3 mx-auto">UI / UX DESign</h2>
+                                        <p class="text-white text-center mt-3">Craft intuitive, user-centered designs that enhance experiences, boost engagement, and elevate digital product success.</p>
+				        			</div>
+				        		</div>
+				        	</div>
+				        </div>
+			    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="testimonials p-120">
         <div class="container">
-            <h2 class="section-title">Success Stories</h2>
-            <div class="testimonial-slider">
+            <h2 class="section-title text-white">Success Stories</h2>
+            <div class="testimonial-slider d-flex flex-column gap-5">
                 <div class="testimonial animate-on-scroll">
                     <div class="testimonial-content">
-                        <p>"I learned photography from Alex while teaching him web development. It was a win-win exchange that helped both our careers!"</p>
+                        <p>"Amazing platform! I exchanged my design skills for coding help—seamless and super rewarding experience!"</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="https://placehold.co/100x100" alt="User">
+                        <img src="assests/images/faces/Figure → team-image3.jpg.png" alt="User">
                         <div>
                             <h4>Sarah Johnson</h4>
                             <p>Web Developer</p>
@@ -278,5 +349,22 @@
     <script src="js/animations.js"></script>
     <script src="js/api.js"></script>
     <script src="js/validation.js"></script>
+    <script>
+        let items = document.querySelectorAll('.skill-grid .carousel .carousel-item')
+
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+        })
+    </script>
 </body>
 </html>
