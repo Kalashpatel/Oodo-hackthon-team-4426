@@ -3,9 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oodo hackathon</title>
+    <!-- icons -->
+     <link rel="stylesheet" href="assests/css/bootstrap-icons.min.css">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="assests/css/all.min.css">
+    <!-- fonts -->
+     <link rel="stylesheet" href="assests/css/offline-font.css">
+    <!-- bootstrap css -->
+     <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <!-- custom stylesheet -->
+     <link rel="stylesheet" href="assests/css/style.css">
+    <!-- favicon -->
+     <link rel="shortcut icon" href="assests/images/favicon.png" type="image/x-icon">
+    <title>SkillSwap | Clever play on “wise” decisions and skill swapping.</title>
+    <link rel="stylesheet" href="assests/css/animations.css">
+    <link rel="stylesheet" href="assests/css/responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+     <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><span>Skill</span>Swap</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg main-nav">
+                <ul class="collapse navbar-collapse swap-nav" id="navbarSupportedContent">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Browse Skills</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Swap Requests</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="navbar-toggler text-white my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active hero-img">
+              <img src="assests/images/hero/0x0.webp" class="d-block w-100" alt="img1">
+              <div class="carousel-caption d-none d-md-block w-50 text-start">
+                <h1 class="animate-on-load display-2">Share Your Skills, <br>Grow Together</h1>
+                <p class="animate-on-load">Connect with others, exchange skills, and learn something new today.</p>
+                <div class="hero-buttons animate-on-load mt-4">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item hero-img">
+              <img src="assests/images/hero/banner-home3.jpg" class="d-block w-100" alt="img1">
+              <div class="carousel-caption d-none d-md-block w-50 text-start">
+                <h1 class="animate-on-load display-2">Share Your Skills, <br>Grow Together</h1>
+                <p class="animate-on-load">Connect with others, exchange skills, and learn something new today.</p>
+                <div class="hero-buttons animate-on-load mt-4">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item hero-img">
+              <img src="assests/images/hero/skill.jpg" class="d-block w-100" alt="img1">
+              <div class="carousel-caption d-none d-md-block w-50 text-start">
+                <h1 class="animate-on-load display-2">Share Your Skills, <br>Grow Together</h1>
+                <p class="animate-on-load">Connect with others, exchange skills, and learn something new today.</p>
+                <div class="hero-buttons animate-on-load mt-4">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+
+    <section class="how-it-works p-120">
+        <div class="container">
+            <h2 class="section-title text-white">How It Works</h2>
+            <div class="steps">
+                <div class="step animate-on-scroll work-item">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="text-white">Create Profile</h3>
+                    <p class="text-white">Sign up and list your skills and what you want to learn.</p>
+                </div>
+                <div class="step animate-on-scroll work-item">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-white">Find Matches</h3>
+                    <p class="text-white">Browse or search for people with complementary skills.</p>
+                </div>
+                <div class="step animate-on-scroll work-item">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-white">Request Swap</h3>
+                    <p class="text-white">Send a swap request and arrange a time to exchange skills.</p>
+                </div>
+                <div class="step animate-on-scroll work-item">
+                    <div class="step-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-white">Rate & Review</h3>
+                    <p class="text-white">After the swap, leave feedback to build community trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-skills p-120">
+        <div class="container">
+            <h2 class="section-title text-white">Popular Skills</h2>
+            <div class="skills-grid">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials p-120">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial animate-on-scroll">
+                    <div class="testimonial-content">
+                        <p>"I learned photography from Alex while teaching him web development. It was a win-win exchange that helped both our careers!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/100x100" alt="User">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonials will be added dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section class="cta p-120">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Ready to Start Swapping Skills?</h2>
+                <p>Join our community today and begin your skill-sharing journey.</p>
+                <button class="btn btn-primary">Sign Up Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span>Skill</span>Swap</h2>
+                    <p>Connect. Learn. Grow.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Platform</h3>
+                        <ul>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Browse Skills</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkillSwap. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal templates -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="form-footer">Don't have an account? <a href="#" id="switch-to-signup">Sign up</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+            <p class="form-footer">Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>

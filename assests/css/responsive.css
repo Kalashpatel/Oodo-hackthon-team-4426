@@ -1,0 +1,120 @@
+/* Responsive Styles */
+
+/* Large Screens (Desktops) */
+@media screen and (max-width: 1200px) {
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+    
+    .hero-content, .hero-image {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-logo, .footer-links, .footer-newsletter {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media screen and (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .main-nav.active {
+        display: block;
+        width: 100%;
+        order: 3;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .main-nav ul li {
+        margin: 0;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .auth-buttons {
+        margin-left: auto;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-slider {
+        padding: 0;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+    }
+    
+    .footer-links-column {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .hero-buttons .btn {
+        margin: 0.5rem;
+    }
+}
